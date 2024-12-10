@@ -1,0 +1,217 @@
+/* 页面整体样式 */
+.home {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.5); /* 半透明灰色 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 添加阴影 */
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-button:hover {
+    color: #4CAF50;  /* 鼠标悬停时按钮变色 */
+}
+
+/* 搜索框 */
+.search {
+    margin-top: 120px; /* 确保搜索框位于导航栏下方 */
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search h1 {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* 支持在小屏幕上换行 */
+}
+
+.search input,
+.search button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;  /* 设定输入框宽度 */
+}
+
+.search button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #45a049;
+}
+
+/* 车辆展示区 */
+.vehicles {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vehicles h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.vehicle-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 四列布局 */
+    gap: 20px;
+    justify-items: center;  /* 保证每个 item 水平居中 */
+    margin-top: 20px;
+}
+
+.vehicle-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;  /* 增加平滑的缩放效果 */
+}
+
+.vehicle-item:hover {
+    transform: scale(1.05);  /* 鼠标悬停时轻微放大 */
+}
+
+.vehicle-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;  /* 保持图片比例 */
+    border-radius: 10px;
+}
+
+.vehicle-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.vehicle-item p {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 租车流程 */
+.process {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    height: 100vh; /* 设置为视口高度，确保可以滚动 */
+    overflow-y: auto;  /* 允许竖向滚动 */
+  }
+  
+  .process h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .process-step h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .process-step p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin: 0 15px;
+  }
+  
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.footer:hover {
+    background-color: #444;  /* 页脚悬停效果 */
+}

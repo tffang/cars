@@ -1,0 +1,49 @@
+/* 页面主体 */
+.home {
+  font-family: 'PingFang SC', 'Arial', sans-serif;
+}
+
+/* 顶部导航栏 */
+.navbar {
+  background-color: #005c87; /* 神州租车的蓝色 */
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.navbar-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #005c87;
+  background-color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  border: 1px solid #005c87;
+}
+
+.navbar-button:hover {
+  background-color: #005c87;
+  color: white;
+  transform: scale(1.1);
+}
+
+.navbar-button:focus {
+  outline: none;
+}
